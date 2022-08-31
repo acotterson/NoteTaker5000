@@ -1,14 +1,30 @@
 {
   "name": "note-taker",
   "version": "1.0.0",
-  "description": "",
+  "description": "Webpage for note taking",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Alec Otterson",
+  "license": "MIT",
   "dependencies": {
-    "express": "^4.16.4"
-  }
+    "express": "^4.16.4",
+    "systeminformation": "^5.12.6"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/acotterson/NoteTaker5000.git"
+  },
+  "keywords": [
+    "notes",
+    "web",
+    "javascript",
+    "express"
+  ],
+  "bugs": {
+    "url": "https://github.com/acotterson/NoteTaker5000/issues"
+  },
+  "homepage": "https://github.com/acotterson/NoteTaker5000#readme"
 }
