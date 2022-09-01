@@ -22,7 +22,7 @@ Download or clone the files. Open a bash terminal in the main directory. Run "np
 
 ## Usage
 
-Run "npm start" or go the [Heroku deployed link](https://github.com/acotterson) and the main webpage will be opened up. Clicking on "Get Started" will take you to the note zone. The "Note Taker" button in the top left will bring you back to this home page from wherever you are.
+Run "npm start" or go the [Heroku deployed link](https://notetaker50000.herokuapp.com) and the main webpage will be opened up. Clicking on "Get Started" will take you to the note zone. The "Note Taker" button in the top left will bring you back to this home page from wherever you are.
 
 To take a note, add a note title and some note text and click the save icon that appears in the top right. Your saved note will appear on the left side of the page.
 
@@ -32,7 +32,7 @@ To view a saved note, cick on its name in the panel on the left.
 
 To delete a note, click on the trash can icon next to the note in question on the left panel.
 
-
+![screenshot](https://user-images.githubusercontent.com/35825121/187824843-2df06d6e-97e5-47d9-94de-06717686f856.png)
 
 ## Questions
 
