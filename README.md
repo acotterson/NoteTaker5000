@@ -22,13 +22,17 @@ Download or clone the files. Open a bash terminal in the main directory. Run "np
 
 ## Usage
 
-Run "npm start". A webpage will be opened up. 
+Run "npm start" or go the [Heroku deployed link](https://github.com/acotterson) and the main webpage will be opened up. Clicking on "Get Started" will take you to the note zone. The "Note Taker" button in the top left will bring you back to this home page from wherever you are.
 
-Image resources for the webpage are located in ../Assets/images/. 
+To take a note, add a note title and some note text and click the save icon that appears in the top right. Your saved note will appear on the left side of the page.
 
-[Video Link of Usage](https://watch.screencastify.com/v/EPbNBpCsEQztKyTLBzPV)
+To take a new note, click the "+" in the top right corner.
 
-https://user-images.githubusercontent.com/35825121/185670893-b456918f-d908-43dc-8846-ae0bb9140b7e.mp4
+To view a saved note, cick on its name in the panel on the left.
+
+To delete a note, click on the trash can icon next to the note in question on the left panel.
+
+
 
 ## Questions
 
