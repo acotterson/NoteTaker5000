@@ -21,4 +21,19 @@ const readAndAppend = (content, file) => {
   });
 };
 
-module.exports = { readFromFile, writeToFile, readAndAppend };
+const deleteFromFile = (id, file) => {
+  fs.readFile(file, "utf8", (err, data) => {
+    if (err) {
+      console.error(err);
+    } else {
+      const parseData = JSON.parse(data);
+      //   https://stackoverflow.com/questions/8163859/how-can-i-get-data-in-json-array-by-id
+      const minusDeleted = parseData.filter(function (parseData) {
+        return parseData["id"] !== id;
+      });
+      writeToFile(file, minusDeleted);
+    }
+  });
+};
+
+module.exports = { readFromFile, writeToFile, readAndAppend, deleteFromFile };
