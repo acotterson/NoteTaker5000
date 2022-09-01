@@ -7,20 +7,20 @@ notes.get('/', (req, res) => {
 });
 
 notes.post('/', (req, res) => {
-    cconsole.log(req.body);
+    console.log(req.body);
 
-    const {title, text} = req.body();
+    const {title, text} = req.body;
 
     if(req.body) {
         const newNote = {
             title,
             text,
-            note_id: uuid(),
+            id: uuid(),
         };
         readAndAppend(newNote, './db/db.json');
         res.json('Note added successfully');
     }else {
-        res/errpr('Error in adding note.');
+        res.json('Error in adding note.');
     }
 
 });
