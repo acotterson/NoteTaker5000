@@ -1,12 +1,14 @@
+// get dependencies
 const notes = require('express').Router();
-const { raw } = require('express');
 const {readFromFile, readAndAppend, deleteFromFile } = require('../helpers/fsUtils');
 const uuid = require('../helpers/uuid');
 
+// get request will read the db file and return all the json
 notes.get('/', (req, res) => {
     readFromFile('./db/db.json').then((data) => res.json(JSON.parse(data)));
 });
 
+// post request will put the provided body, consisting of title and text, with a unique id and add it to the db file
 notes.post('/', (req, res) => {
     console.log(req.body);
 
@@ -26,6 +28,7 @@ notes.post('/', (req, res) => {
 
 });
 
+// delete request will use the note id to remove the specified note from the db file
 notes.delete('/:id', (req, res) => {
     if(req.params.id) {
         deleteFromFile(req.params.id, './db/db.json');

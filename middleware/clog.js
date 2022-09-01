@@ -10,6 +10,7 @@ const clog = (req, res, next) => {
       console.info(`📘 ${fgCyan}${req.method} request to ${req.path}`);
       break;
     }
+    // usually applies to delete requests in our case
     default:
       console.log(`📙${fgCyan}${req.method} request to ${req.path}`);
   }
